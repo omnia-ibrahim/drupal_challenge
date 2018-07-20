@@ -1,0 +1,21 @@
+name = Drupal challenge
+description = A custom module for drupal challenge task.
+core = 7.x
+package = Drupal challenge
+
+dependencies[] = views
+dependencies[] = features
+
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[node][] = job
+features[views_view][] = jobs
+features_exclude[dependencies][features] = features
+features_exclude[dependencies][list] = list
+features_exclude[dependencies][views] = views
+features_exclude[field_base][body] = body
+features_exclude[field_base][field_employment_type] = field_employment_type
+features_exclude[field_instance][node-job-body] = node-job-body
+features_exclude[field_instance][node-job-field_employment_type] = node-job-field_employment_type
+
+
